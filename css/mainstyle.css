@@ -1,0 +1,191 @@
+
+#contentBody{
+	background-color: #B0B0B0;//red;
+	margin-left: auto;
+	position :inherit;
+	padding: 2px;"
+	width: 100%;
+	height: 100%;
+	
+}
+
+
+#loginForm{
+    font-family: 'Open Sans',sans-serif;
+	font-size: 12px;
+	float:right;
+	position: inherit;
+	 margin: 10px;
+    padding: 20px 20px 15px 20px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px, rgba(0, 0, 0, 0.35) 0 0 1px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px, rgba(0, 0, 0, 0.35) 0 0 1px;
+    -ms-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px, rgba(0, 0, 0, 0.35) 0 0 1px;
+    -o-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px, rgba(0, 0, 0, 0.35) 0 0 1px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px, rgba(0, 0, 0, 0.35) 0 0 1px;
+    background: #fff;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+}
+
+#ads{
+    font-family: 'Open Sans',sans-serif;
+	font-size: 12px;
+	float:right;
+	position: inherit;
+	margin-left: 10px;
+	margin-right: 20px;
+    padding: 5px 5px 5px 5px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 1px, rgba(0, 0, 0, 0.2) 0 0 1px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 1px, rgba(0, 0, 0, 0.2) 0 0 1px;
+    -ms-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 1px, rgba(0, 0, 0, 0.2) 0 0 1px;
+    -o-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 1px, rgba(0, 0, 0, 0.2) 0 0 1px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 1px, rgba(0, 0, 0, 0.2) 0 0 1px;
+    background: #fff;
+    
+}
+
+
+#signupForm{
+    font-family: 'Open Sans',sans-serif;
+	font-size: 12px;
+	float:right;
+	position: inherit;
+	 margin: 10px;
+    padding: 20px 20px 15px 20px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px, rgba(0, 0, 0, 0.35) 0 0 1px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px, rgba(0, 0, 0, 0.35) 0 0 1px;
+    -ms-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px, rgba(0, 0, 0, 0.35) 0 0 1px;
+    -o-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px, rgba(0, 0, 0, 0.35) 0 0 1px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px, rgba(0, 0, 0, 0.35) 0 0 1px;
+    background: #fff;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+}
+
+
+#profile{
+	margin: 50px;
+	color: #717475;
+	display: none;
+	font-size:13px;
+	line-height:2;
+}
+
+#plan{
+	margin: 50px;
+	display: none;
+}
+
+
+/* css property for plan tab: */
+#plan1{
+	margin: 50px;
+	display: none;
+}
+/* END--css property for plan tab:-- */
+
+
+#accountStatement{
+	margin: 50px;
+	display: none;
+	
+}
+#payments{
+	margin: 50px;
+	display: none;
+}
+#tickets{
+	margin-left: 50px;
+	margin-top:15px;
+	display: none;
+}
+/*
+#accountStatement table, #plan table, #payments table{
+	font-family:Arial, Helvetica, sans-serif;
+	color:#666;
+	font-size:12px;
+	background:#e0e0e0;
+	border:#ccc 1px solid;
+	width: 650px;
+	position: relative;
+	margin-right: 50px;
+}
+
+#accountStatement table th, #plan table th, #payments table th{
+	padding:5px 5px 5px 5px;
+	border-top:1px solid #e0e0e0;
+	border-bottom:1px solid #e0e0e0;
+
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+	background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
+}
+
+#accountStatement table tr td, #plan table tr td, #payments table tr td{
+	border-bottom:1px solid black;
+	padding-left: 8px;
+}
+
+#accountStatement table tr th, #plan table tr th, #payments table tr th{
+	-moz-border-radius-topleft:3px;
+	-webkit-border-top-left-radius:3px;
+	border-top-left-radius:3px;
+}
+
+*/
+
+
+.clienttableftpane table{
+	border-radius: 5px;
+}
+
+
+.menu{
+    width: 100%;
+    background-color: #333; 
+    border: 1px solid;
+    border-radius: 7px;
+    }
+    
+.menu ul{
+    margin: 0; padding: 0;
+    float: left;}
+
+#logout{
+	display: none;
+    margin: 0; padding: 0;
+    float: right;}     
+#user{
+	display: none;
+    margin: 0; padding: 0;
+    float: right;
+}
+.menu ul li a{
+	
+	border-radius: 5px;
+}
+.menu ul li{
+	display: inline;
+	}
+
+.menu ul li a{
+    float: left; text-decoration: none;
+    color: white;
+    padding: 10.5px 11px;
+    background-color: #333; }
+
+.menu ul li a:visited{
+    color: white;
+    border-radius: 5px; 
+    }
+.menu ul li a:hover, .menu ul li .current{
+    color: #fff;
+    background-color:orange;
+	border-radius: 5px;    
+    }

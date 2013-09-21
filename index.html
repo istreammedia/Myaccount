@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>HUGO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+    <!-- bootstrap -->
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="css/bootstrap/bootstrap-overrides.css" type="text/css" rel="stylesheet" />
+
+    <!-- libraries -->
+    <link href="css/lib/font-awesome.css" type="text/css" rel="stylesheet" />
+	<link href="css/lib/bootstrap.datepicker.css" type="text/css" rel="stylesheet" />
+
+	 <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+	
+    <!-- global styles -->
+    <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/elements.css" />
+    <link rel="stylesheet" type="text/css" href="css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="css/mainstyle.css">
+    <link rel="stylesheet" href="css/compiled/form-showcase.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/jquery.ui.css" />
+	
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery.base64.js"></script>
+    <script type="text/javascript" src="js/jquery.base64.min.js"></script>
+	
+   
+    <!-- open sans font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css' />
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+	<script>
+        $(document).ready(function(){
+       
+		$("#signbut").click(function(){
+        $("#loginForm").hide();
+        });
+		$("#signbut").click(function(){
+        $("#signupForm").show();
+        });
+		$("#loginbut").click(function(){
+        $("#signupForm").hide();
+        });
+		$("#loginbut").click(function(){
+        $("#loginForm").show();
+        });
+		
+		
+		
+		$("#1").click(function(){
+        $("#1").addClass("active");
+        });
+		$("#1").click(function(){
+        $("#2").removeClass("active");
+        });
+		$("#1").click(function(){
+        $("#3").removeClass("active");
+        });
+		$("#1").click(function(){
+        $("#4").removeClass("active");
+        });
+		$("#1").click(function(){
+        $("#5").removeClass("active");
+        });
+		
+		$("#2").click(function(){
+        $("#2").addClass("active");
+        });
+		$("#2").click(function(){
+        $("#1").removeClass("active");
+        });
+		$("#2").click(function(){
+        $("#3").removeClass("active");
+        });
+		$("#2").click(function(){
+        $("#4").removeClass("active");
+        });
+		$("#2").click(function(){
+        $("#5").removeClass("active");
+        });
+		
+		
+		$("#3").click(function(){
+        $("#3").addClass("active");
+        });
+		$("#3").click(function(){
+        $("#1").removeClass("active");
+        });
+		$("#3").click(function(){
+        $("#2").removeClass("active");
+        });
+		$("#3").click(function(){
+        $("#4").removeClass("active");
+        });
+		$("#3").click(function(){
+        $("#5").removeClass("active");
+        });
+		
+		
+		$("#4").click(function(){
+        $("#4").addClass("active");
+        });
+		$("#4").click(function(){
+        $("#1").removeClass("active");
+        });
+		$("#4").click(function(){
+        $("#2").removeClass("active");
+        });
+		$("#4").click(function(){
+        $("#3").removeClass("active");
+        });
+		$("#4").click(function(){
+        $("#5").removeClass("active");
+        });
+		
+		$("#5").click(function(){
+        $("#5").addClass("active");
+        });
+		$("#5").click(function(){
+        $("#1").removeClass("active");
+        });
+		$("#5").click(function(){
+        $("#2").removeClass("active");
+        });
+		$("#5").click(function(){
+        $("#3").removeClass("active");
+        });
+		$("#5").click(function(){
+        $("#4").removeClass("active");
+        });
+		
+		$("#2").click(function(){
+        $("#1").removeClass("active");
+        });
+		
+        });
+    </script>
+	<style>
+	.active{
+	background-color: #8B8A8C;
+	color:#ffffff;
+	}
+	</style>
+</head>
+<body>
+	    <!-- Navigation Bar -->
+        <div class="navbar navbar-inverse">
+				  <div class="navbar-inner">
+					<a class="brand" href="#"><img src="img/logo.png" /></a>
+					<div class="nav-collapse collapse">
+									<ul class="nav">
+										  <li><a href="#" id="1">Profile</a></li>
+										  <li><a href="#" id="2">Plan</a></li>
+										  <li><a href="#" id="3">Statements</a></li>
+										  <li><a href="#" id="4">Payments</a></li>
+										  <li><a href="#" id="5">Tickets</a></li>
+										  <li><a></a></li>
+									</ul>
+									<ul id="user" class="nav pull-right">
+										<li class="dropdown"><a href="#"></a></li>
+									</ul>
+									<ul id="logout" class="nav pull-right">
+										<li class="dropdown"><a href="#">Logout</a></li>
+									</ul>
+					</div>
+				  </div>
+        </div>
+	
+	
+	<!-- Login Form -->
+	<form id="loginForm">
+					<table>
+						<tr>
+						<td class="invalidErrorMessage"></td>
+						</tr>
+						<tr>
+								<td align="left"><label for="userName">Username:</label></td>
+								<td><input type="text" name="userName" id="userName" placeHolder=" User Name" size=18 value="mujeeb"/></td>
+						</tr>
+						<tr>
+								<td align="left"><label for="userPassword">Password:</label></td>
+								<td><input type="password" name="userPassword"  id="userPassword" placeHolder="Enter Password" size=18 value="gdxlhram"/></td>
+						</tr>
+						<tr>
+							<td  align="right"><a id="signbut" style="text-decoration:none;" href="#">Sign Up</a></td>
+							<td align="right"><input type="button" value="Login" id="login" class="btn-glow primary signup"/>&nbsp;<input type="button" value="Reset" id="login1" class="btn-glow primary1 signup"/></td>
+						</tr>
+						
+					</table>
+	</form>
+	<div id="ads" style="display:none;" >
+         <div> <img src="img/fff.jpg" width="300px" height="300px" ></div>
+		 <br>
+         <div> <img src="img/222.jpeg" width="146px" height="146px" > &nbsp;<img src="img/333.jpeg" width="146px" height="146px" ></div>
+		      <br/>    <div> <img src="img/333.jpeg" width="146px" height="146px" > &nbsp;<img src="img/222.jpeg" width="146px" height="146px" ></div>
+
+
+	</div>
+	
+	
+	<form id="signupForm" style="display:none;">
+					<table>
+						<tr>
+							<td class="invalidErrorMessage"></td>
+						</tr>
+						<tr>
+								<td align="left"><label for="requestedUserName">Username:</label></td>
+								<td><input type="text" name="requestedUserName" id="requestedUserName" placeHolder="Request UserName" size=18 /></td>
+						</tr>
+						<tr>
+								<td align="left"><label for="userName">Email ID:</label></td>
+								<td><input type="text" name="userName" id="emailId" placeHolder="Enter Email Id" size=18 /></td>
+						</tr>
+						<tr>
+							<td  align="right"><a id="loginbut" style="text-decoration:none;" href="#">Login</a></td>
+							<td align="right"><input type="button" value="Sign Up" id="signup" class="btn-glow primary signup"/>&nbsp;<input type="button" value="Reset" id="login1" class="btn-glow primary1 signup"/></td>
+						</tr>
+						
+					</table>
+	</form>
+	<!-- End Login Form -->
+	
+
+	
+	<div class="content">
+			<table id="profile">
+						<tr>
+							<td valign="top">
+								<div style="float:left; max-width: 700px; width: 700px;" class="clienttableftpane field-box">
+		                 				<b ><big>Profile</big>:</b><br><br>
+										<span class="longrowlabel">Name :&emsp;&emsp;&emsp;&emsp;&emsp;</span>
+										<span class="name"></span>
+										<br/>
+										<span class="longrowlabel">Account No :&emsp;&nbsp;&emsp;&nbsp;</span>
+										<span class="accountNo"></span>
+										<br/>						
+										<span class="longrowlabel">Status :&emsp;&emsp;&emsp;&emsp;&emsp;</span>
+										<span class="status"></span>
+										<br/>								
+										<span class="longrowlabel">Activation Date :&emsp;</span>
+										<span class="activationDate"></span>
+										<br/>								
+										<span class="longrowlabel">Office :&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;</span>
+										<span class="office"></span>
+										<br/>								
+										
+								</div>
+							</td>
+						</tr>
+						
+						<tr>
+							<td valign="top">
+								<div style="margin-left:500px;margin-top:-185px;color:#717475; max-width: 700px; width: 700px;" class="clienttableftpane">
+                 				<b><big>Address Details</big>:</b><br><br>
+                   				<span class="addressLabel">Address :&emsp;&emsp;</span>
+                   				<span class="addressNo"></span>
+                   				<br>
+                   				<span class="addressLabel">Street :&emsp;&emsp;&emsp;</span>
+                   				<span class="street"></span>
+                   				<br>		
+                   				<span class="addressLabel">City :&emsp;&emsp;&emsp;&emsp;</span>
+                   				<span class="city"></span>                   				
+                   				<br>
+                   				<span class="addressLabel">State :&emsp;&emsp;&emsp;&nbsp;</span>
+                   				<span class="state"></span>
+                   				<br>	
+                   				<span class="addressLabel">Country :&emsp;&emsp;</span>
+                   				<span class="country"></span>
+                   				<br>
+                   				<span class="addressLabel">Zip :&emsp;&emsp;&emsp;&emsp;&nbsp;</span>
+                   				<span class="zip"></span>
+                   				<br>
+                   				</div>
+                   				<p style="color:#878383;font-size:16px;padding:100px;"><span class="longrowlabel">Balance to be paid:</span>
+										<span class="balance"></span>:&emsp;&nbsp;&nbsp;&emsp;&nbsp;&emsp;&nbsp;<input type="button" id="paypal" value="Pay Now" class="btn-glow" style="padding:2px 10px;color:#686868;"></p>	
+							</td>
+						</tr>
+					
+			</table>
+                            <div id="profile" class="span6 field-box actions">
+                            <input type="button" class="btn-glow primary" value="Pay Now" />
+                            </div>
+				    <div id="plan1" class="row-fluid">
+                        <table class="table table-hover" id="plansTable">
+                            <thead>
+                                <tr>
+                                    <th class="span2">Order ID</th>
+									<th class="span3"><span class="line"></span>Plan</th>
+                                    <th class="span3"><span class="line"></span>Contract Period</th>
+                                    <th class="span3"><span class="line"></span>Start Date</th>
+                                    <th class="span3"><span class="line"></span>End Date</th>
+                                    <th class="span3"><span class="line"></span>Price</th>
+									<th class="span3"><span class="line"></span>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+								
+                            </tbody>
+                        </table>
+                    </div>
+
+					
+				    <div id="payments" class="row-fluid">
+                        <table class="table table-hover" id="paymentsTable">
+                            <thead>
+                                <tr>
+                                    <th class="span3">Name</th>
+                                    <th class="span3"><span class="line"></span>Payment Date</th>
+                                    <th class="span3"><span class="line"></span>Amount Paid</th>
+									<th class="span3"><span class="line"></span>Payment Mode</th>
+									<th class="span3"><span class="line"></span>Receipt Number</th>
+									<th class="span3"><span class="line"></span>Bill Number</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="accountStatement" class="row-fluid">
+                        <table class="table table-hover" id="statementsTable">
+                            <thead>
+                                <tr>
+                                    <th class="span2">Order ID</th>
+									<th class="span3"><span class="line"></span>Bill Date</th>
+                                    <th class="span3"><span class="line"></span>Due Date</th>
+                                    <th class="span3"><span class="line"></span>Amount</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+	
+	<div id="tickets" style="display:none;">
+	                <div class="row-fluid filter-block">
+                        <div class="pull-right">
+                            <a id="ticketbut" class="btn-flat new-product">+ Add New Ticket</a>
+                        </div>
+                    </div>
+					<br />
+	
+					<div class="row-fluid">
+                        <table class="table table-hover" id="ticketsTable">
+                            <thead>
+                                <tr>
+                                    <th class="span2">
+                                        ID
+                                    </th>
+                                    <th class="span3">
+									<span class="line"></span>
+                                        Priority
+                                    </th>
+                                    <th class="span3">
+                                        <span class="line"></span>
+                                        Ticket Date
+                                    </th>
+                                    <th class="span3">
+                                        <span class="line"></span>
+                                        Problem Description
+                                    </th>
+                                    <th class="span3">
+                                        <span class="line"></span>
+                                        Assigned To
+                                    </th>
+                                    <th class="span3">
+                                        <span class="line"></span>
+                                        Last Comment
+                                    </th>
+									<th class="span3">
+                                        <span class="line"></span>
+                                        Status
+                                    </th>
+                                </tr>
+                            </thead>
+ 
+                        </table>
+                    </div>
+	                <br />
+                    
+	       		<div class="container-fluid" style="display:none;height:auto;" id="ticketbdy">
+	       					<span id="errorSpace"></span>	
+                           <div  class="form-page">
+                              <div class="row-fluid form-wrapper">
+                    <!-- left column -->
+                              
+                                  <form />
+			   				<br />
+                            
+							<div class="field-box">
+                                <label>Category :</label>
+                                <div >
+                                    <select id="ticketCategory">
+                                        <option selected="">Account Problems</option>
+                                        <option value="10">Billing Problems</option>
+										<option value="11">Service Problems</option>
+										<option value="12">Account Problems</option>
+                                    </select>
+                                </div>
+                            </div> <br />
+							
+							<div class="field-box">
+                                <label>Description :</label>
+                                <textarea class="span8" rows="4" id="description"></textarea>
+                            </div>
+                            
+                        </form>
+						<div class="pull-right">
+                            	<a class="btn-flat" id="submit">Submit</a>
+                            	<a class="btn-flat" id="cancel">Cancel</a>
+                        </div>
+                       
+                </div>
+              </div>
+            </div>
+    </div>
+					
+	<div class="modal hide" id="pleaseWaitDialog" data-backdrop="static" data-keyboard="false">
+        <div class="modal-header">
+            <h1>Processing...</h1>
+        </div>
+        <div class="modal-body">
+            <div class="progress progress-striped active">
+                <div class="bar" style="width: 100%;"></div>
+            </div>
+        </div>
+    </div>
+                 
+    </div>
+
+			
+
+
+
+
+	<!-- scripts -->
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.datepicker.js"></script>
+    <script src="js/jquery.uniform.min.js"></script>
+    <script src="js/jquery.json-2.4.js"></script>    
+    <script src="js/select2.min.js"></script>
+    <script src="js/theme.js"></script>
+
+	<script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+    <!-- call this page plugins -->
+    <script type="text/javascript">
+        $(function () {
+
+            // add uniform plugin styles to html elements
+            $("input:checkbox, input:radio").uniform();
+
+            // select2 plugin for select elements
+            $(".select2").select2({
+                placeholder: "Select a State"
+            });
+
+            // datepicker plugin
+            $('.datepicker').datepicker().on('changeDate', function (ev) {
+                $(this).datepicker('hide');
+            });
+
+            // wysihtml5 plugin on textarea
+            $(".wysihtml5").wysihtml5({
+                "font-styles": false
+            });
+			
+			
+        });
+    </script>
+</body>
+</html>
